@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biodata</title>
+  <style>
+    :root {
+      --text-color-second: #333;
+      --text-color-third: #666;
+    }
+
+    body {
+      background-color: bisque;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      background-image: url(pexels-pixabay-257092.jpg);
+    }
+
+    .biodata-diri {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    .biodata-diri img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .featured-name {
+      font-size: 50px;
+      font-weight: 600;
+      color: var(--text-color-second);
+      margin-block: 20px;
+    }
+
+    .typedText {
+      text-transform: capitalize;
+      color: var(--text-color-third);
+      font-style: italic ;
+    }
+
+    .featured-text-info {
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: var(--text-color-second);
+    }
+  </style>
+</head>
+<body>
+  <div class="biodata-diri">
+    <img src="1.jpeg" alt="Foto Profil">
+  </div>
+  <div class="featured-name">
+    <p><span class="typedText"></span></p>
+  </div>
+  <div class="featured-text-info">
+   
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    let typingEffect = new Typed(".typedText", {
+      strings: [" Hey, perkenalkan saya AQIEL SYAFARDHAN. Biasa teman-teman memanggilku SHASA. Saya lahir di Serang-Banten, tepatnya di daerah pesisir Domas, Kecamatan Pontang, pada tahun 1996.","pekerjaan saya sekarang sebagai cleaning service di sebuah universitas di daerah serang","saya juga sekarang sedang menimba ilmu alias kuliah di salasatu univ swasta yang belum lama ini berdiri cabangnya di serang"],
+      loop: true,
+      typeSpeed: 100,
+      backSpeed: 0,
+    //   backDelay: 2000
+    });
+  </script>
+</body>
+</html>

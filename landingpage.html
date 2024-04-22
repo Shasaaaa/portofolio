@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url(pinus.jpg);
+      /* transition: background-image 1s ease-in-out; */
+    }
+
+    .container {
+      max-width: 800px;
+      padding: 20px;
+      text-align: center;
+      z-index: 1;
+      margin-top: -20%;
+    }
+
+    .container p {
+      font-size: 1.5em;
+      font-style: italic;
+    }
+
+    .container p span {
+      color: red;
+    }
+
+    h1 {
+      color: #333;
+      font-size: 2.5em;
+    }
+    h1 span {
+      color: aqua;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #d52c2c;
+    }
+
+    ul {
+      display: flex;
+      list-style: none;
+      position: absolute;
+      left: 50%;
+      top: 80%;
+      transform: translateX(-50%);
+      z-index: 1;
+    }
+
+    ul li img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      cursor: pointer;
+      transition: transform 1s;
+      display: none;
+    }
+
+    ul li img:hover {
+      transform: rotate(360deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>WELCOME TO MY <span>PORTOFOLIO</span></h1>
+    <p>Ilu bisa lihat potrofolio gua secara detail dengan mengklik <span>yuk tekan</span> di bawah ini.</p>
+    <a href="Index.html" class="btn" target="_blank">yuk tekan</a>
+    <!-- <h1 id="image-title">image1</h1> -->
+  </div>
+  <!-- <ul>
+    <li><img id="img1" src="pexels-pixabay-257092.jpg" title="image 1"></li>
+    <li><img id="img2" src="pexels-aron-visuals-1743165.jpg" title="image 2"></li>
+    <li><img id="img3" src="bg-image.png" title="image 3"></li>
+  </ul> -->
+  <script>
+    
+    // let currentImageIndex = 0;
+    // const images = [
+    //   "pexels-pixabay-257092.jpg",
+    //   "pexels-aron-visuals-1743165.jpg",
+    //   "bg-image.png",
+    // ];
+
+    // function changeImage() {
+    //   document.body.style.backgroundImage = `url(${images[currentImageIndex]})`;
+    //   document.getElementById("image-title").innerText = `image ${currentImageIndex + 1}`;
+    //   currentImageIndex = (currentImageIndex + 1) % images.length;
+    // }
+
+    // setInterval(changeImage, 3000);
+    
+  </script>
+</body>
+</html>
